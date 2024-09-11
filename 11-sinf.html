@@ -3,33 +3,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <style>
-            *{
-                margin: 0%;
-                padding: 0%;
-                box-sizing: border-box;
-
-            }
-            header{
-                width: 100%;
-                height: 10%;
-                background-color: tomato;
-            }
-            nav{
-                width: 100%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            ul{
-                width: 60%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-            }
-        </style>
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
 
@@ -37,14 +11,40 @@
             <nav>
                 <h1>LOGO</h1>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Gallery</a></li>
-                    <li><a href="">Contacts</a></li>
-                    <li><a href="">Settings</a></li>
+                    <li><a href="#page-1">Home</a></li>
+                    <li><a href="#page-2">About</a></li>
+                    <li><a href="#page-3">Gallery</a></li>
+                    <li><a href="#page-4">Contacts</a></li>
+                    <li><a href="#page-1">Settings</a></li>
                 </ul>
             </nav>
         </header>
+
+        <section id="page-1">
+            <div class="cont">
+                <h2>Welcome</h2>
+                <h1>This is our <br> School</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Harum cumque corporis labore?</p>
+                <div>
+                    <button>See more...</button>
+                </div>
+            </div>
+            <div class="rasim">
+                <img src="../none.png" alt="student">
+            </div>
+        </section>
+        <section id="page-2">
+            <h1>About</h1>
+        </section>
+        <section id="page-3">
+            <h1>Gallery</h1>
+        </section>
+        <section id="page-4">
+            <h1>Contacts</h1>
+        </section>
+        <section id="page-5">
+            <h1>Settings</h1>
+        </section>
         
     </body>
 </html>

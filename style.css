@@ -2,10 +2,11 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    color: white;
 
 }
 h2{
-    color: blue;
+    color: rgba(0, 208, 255, 0.401);
     font-weight: 900;
     font-size: 2rem;
     font-family: monospace;
@@ -14,7 +15,7 @@ header{
     width: 100%;
     height: 10%;
     padding: 0% 7%;
-    background-color: tomato;
+    background-color: teal;
 }
 nav{
     width: 100%;
@@ -69,13 +70,27 @@ button{
     border-radius: 5%;
     width: 50%;
     height: 70%;
+    position: relative;
 }
 .rasim img{
     width: 100%;
     height: auto;
+    position: absolute;
+    bottom: 3%;
+}
+.cont h1{
+    font-size: 3rem;
+    color: white;
+}
+p{
+    color: gray;
+    font-size: 1.2rem;
+    font-family: monospace;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 #page-1{
-    background-color: rgb(170, 211, 166);
+    background-color: wheat;
 }
 #page-2{
     background-color: rgb(78, 170, 206);
