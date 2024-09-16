@@ -3,10 +3,10 @@
     padding: 0%;
     box-sizing: border-box;
     color: white;
-
 }
+
 h2{
-    color: rgba(0, 208, 255, 0.401);
+    color: rgb(255, 255, 255);
     font-weight: 900;
     font-size: 2rem;
     font-family: monospace;
@@ -52,7 +52,14 @@ section{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+.cont h1, h2, p {
+    margin-bottom: 30px;
+    padding: 15px 30px;
+}
+.cont h2{
+    margin-bottom: 70px;
 }
 .cont>div{
     flex-direction: row;
@@ -65,6 +72,7 @@ button{
     border-radius: 10px;
     border: unset;
     margin-right: 20px;
+    margin-left: 33px;
 }
 .rasim{
     border-radius: 5%;
@@ -93,7 +101,10 @@ p{
     background-color: wheat;
 }
 #page-2{
-    background-color: rgb(78, 170, 206);
+    background-image: url('https://cdn.shopify.com/s/files/1/0254/1191/1743/files/5047-5048_description-raspberry-pi-5-features.jpg?v=1695822743');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 #page-3{
     background-color: rgb(131, 131, 208);
@@ -103,4 +114,22 @@ p{
 }
 #page-5{
     background-color: rgb(96, 96, 157);
+}
+
+.first{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 128, 128, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.second{
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    z-index: 0;
 }
