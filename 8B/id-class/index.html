@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID va Class Attributelar</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #myID{
+            border: 2px solid rgb(147, 129, 129);
+            width: 30%;
+            height: 70%;
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+            justify-content: space-evenly;
+
+        }
+        .odd{
+            color: black;
+            font-size: 20px;
+            width: 80%;
+            text-align: center;
+        }
+        
+        .img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        .img img{
+            width: 100%;
+            height: 100%;
+        }
+        .image{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: cadetblue;
+            color: blue;
+            width: 200px;
+            height: 300px;
+            margin-right: 20px;
+        }
+        .cont{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: start;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div id="myID">
+        <div class="img">
+            <img src="https://cdn-images.understood.org/p0qf7j048i0q/EEB2E628CF4E4FCDA816F568531F82C6/b402649e0a06a6038a60607069548604/G1285857890.png" alt="name of the picture">
+        </div>
+        <h1>Full name</h1>
+        <p class="odd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ratione quidem, in, aperiam quam magni, exercitationem saepe consectetur quae qui omnis corporis labore id tenetur vitae consequatur laudantium soluta eius.</p>
+        <div class="cont">
+            <dl>
+                <dt>Tell:</dt>
+                <dd>    +9989012345678</dd>
+                <dt>Address:</dt>
+                <dd>    Name kocha number uy</dd>
+                <dt>Email:</dt>
+                <dd>    name.somthing@mail.com</dd>
+            </dl>
+            <div class="image"></div>
+        </div>
+    </div>
+</body>
+</html>

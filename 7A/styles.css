@@ -23,10 +23,12 @@ td, th{
 }
 table{
     border-spacing: 10px;
+    border-color: teal;
     padding: 20px;
     border-radius: 20px;
     background-color: teal;
 }
 .operators{
-    background-color: tomato;
+    border-color: rgb(240, 149, 133);
+    background-color: rgb(240, 149, 133);
 }

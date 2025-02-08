@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+}
+
+#game-container {
+    padding: 5%;
+    max-width: 1440px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#gallows {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid #000; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 3%;
+    background-color: white;
+}
+#hangman-img{
+    width: 100%;
+    padding: 5%;
+    height: 100%;
+}
+
+#quiz {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#word-display {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#virtual-keyboard {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    width: 85%;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+#virtual-keyboard button {
+    margin: 1%;
+    width: 6vh;
+    height: 4vh;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#virtual-keyboard button.disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+#modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+#modal.hidden {
+    display: none;
+}
+
+#modal-content {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#modal-content *{
+    margin-top: 5%;
+}
+#guess-count, #max-guess{
+    color: red;
+}
+
+#play-again {
+    padding: 10px 20px;
+    border: none;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+@media (max-width: 768px) {
+    #game-container {
+        flex-direction: column;
+        font-size: 1rem;
+        text-align: center;
+    }
+    #quiz {
+        width: 100%;
+    }
+    #gallows {
+        width: 70%;
+        height: 60%;
+    }
+    #virtual-keyboard {
+        width: 100%;
+        font-size: 0.7rem;
+    }
+    #virtual-keyboard button {
+        width: 5vh;
+        height: 3vh;
+    }
+
+    
+}
